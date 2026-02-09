@@ -2,7 +2,7 @@
 // import { useEffect } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
-// import './App.css'
+
 // import Form from './components/form'
 // import Header from './components/Header'
 // import Interest from './components/Interest'
@@ -41,12 +41,13 @@
 
 // export default App
 import { useState } from 'react'
-import Form from './components/form'
+import Form from './components/Form'
 // import Interest from './components/Interest'
-import Interest from './components/interest'
+ import './App.css'
 import Setting from './components/Settings'
 //import Setting from './components/Setting'
 import Header from './components/Header'
+import Specialities from './components/Specialities'
 
 function App() {
   const [tab, setTab] = useState("Form")
@@ -61,8 +62,8 @@ function App() {
     switch (tab) {
       case "Form":
         return <Form />
-      case "Interest":
-        return <Interest />
+      case "Specialities":
+        return <Specialities />
       case "Setting":
         return <Setting />
       default:

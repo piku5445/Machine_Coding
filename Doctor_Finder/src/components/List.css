@@ -1,0 +1,30 @@
+/* ============================================
+   DOCTOR LIST CONTAINER
+   ============================================ */
+
+.doctors-grid {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 20px;
+}
+
+/* Optional: smooth appearance animation */
+.doctors-grid .doctor-card {
+  animation: fadeIn 0.4s ease forwards;
+  opacity: 0;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}

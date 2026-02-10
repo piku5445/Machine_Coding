@@ -34,8 +34,6 @@ ONE word only.
   }
 );
 
-   
-
 const specialist =
       response.data.candidates[0].content.parts[0].text.trim();
 
@@ -48,5 +46,5 @@ const specialist =
 });
 
 app.listen(5000, () => {
-  console.log("🚀 Backend running on http://localhost:5000");
+  console.log(" Backend running on http://localhost:5000");
 });
